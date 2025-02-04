@@ -1,7 +1,7 @@
 ---
 name: Samir Suweis
-position: Università di Padova
-image_path: /images/unipd.png
+position: University of Padova
+image_path: /images/loghi_org/unipd.png
 twitter_username:
 blurb:
 ---

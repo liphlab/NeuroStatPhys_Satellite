@@ -1,7 +1,7 @@
 ---
-name: Miguel Angel Munoz
+name: Ana Paula Millán Vidal 
 position: University of Granada
-image_path: /images/logo_ugr.jpg
+image_path:
 twitter_username:
 blurb:
 ---
