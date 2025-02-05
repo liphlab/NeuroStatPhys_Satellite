@@ -1,5 +1,7 @@
 - name: Home
   link: /
+- name: Registration
+  link: /registration/
 - name: Speakers
   link: /speakers/
 - name: Venue and logistics
