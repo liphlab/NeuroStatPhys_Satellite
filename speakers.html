@@ -1,7 +1,7 @@
 ---
 title: Speakers
 description: Invited speakers.
-image: /images/rialto.jpg
+image: /images/background/rialto.jpg
 ---
 
 <section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
@@ -13,17 +13,42 @@ image: /images/rialto.jpg
 	</div>
 </section>
 
-<section class="pad">
-	<div class="container">
-		<p class="editor-link"><a href="cloudcannon:collections/_speakers" class="btn"><strong>&#9998;</strong> Manage Staff Members</a></p>
-		<ul class="staff">
-			{% for person in site.speakers %}
-				<li>
-					<!--<div class="square-image" style="background-image: url({% include relative-src.html src=person.image_path %})"></div>-->
-					<div class="name">{{ person.name }}</div>
-					<div class="position">{{ person.position }}</div>
-				</li>
-			{% endfor %}
-		</ul>
+
+<div class="content"></div>
+<section class="info">
+	<div class="container flex">
+		<div class="text">
+			<h2 class="editable">Keynote Speakers</h2>
+			<p class="editable">
+			<ul>
+				<li>Stefano Fusi (Columbia University)</li>
+				<li>Dietmar Plenz (NIH)</li>
+			</ul></p>
+		</div>
 	</div>
 </section>
+
+	<section class="info">
+		<div class="container flex">
+			<div class="text">
+				<h2 class="editable">Speakers</h2>
+				<p class="editable">
+				<ul>
+					<li>Raffaella Burioni (University of Parma)</li>
+					<li>Henrik J. Jensen (Imperial College)</li>
+					<li>Gianluigi Mongillo (Institut de la Vision)</li>
+					<li>Francesca Mastrogiuseppe (Champalimaud)</li>
+					<li>Gaia Tavoni (Washington University in St Louis)</li>
+					<li>Luca Mazzucato (University of Oregon)</li>
+					<li>Carlotta Martelli (University Mainz)</li>
+					<li>Gabriel Mahuas (Institut de la Vision)</li>
+					<li>Athena Akrami (University College London)</li>
+					<li>Federico Stella (Donders Institute)</li>
+					<li>Johannes Felsenberg (FMI Basel)</li>
+					<li>Ana Paula Millán Vidal (University of Granada)</li>
+					<li>Michele Allegra (University of Padova)</li>
+				</ul></p>
+			</div>
+		</div>
+	</section>
+</div>

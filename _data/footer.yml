@@ -1,6 +1,8 @@
 left_links:
   - name: Home
     link: /
+  - name: Speakers
+    link: /speakers/
   - name: Logistics
     link: /venue/
   - name: Contacts
