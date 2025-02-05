@@ -1,7 +1,6 @@
 ---
 name: Achille Giacometti
-position: Università di Venezia Ca' Foscari
-image_path: /images/logo_unive.gif
-twitter_username:
-blurb:
+position: Ca’ Foscari University of Venice
+image_path: /images/organizers/Giacometti.gif
+order: 6
 ---
