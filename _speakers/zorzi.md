@@ -1,7 +1,7 @@
 ---
-name: Fabrizio Lombardi
+name: Marco Zorzi 
 position: University of Padova
-image_path: /images/loghi_org/unipd.png
+image_path:
 twitter_username:
 blurb:
 ---

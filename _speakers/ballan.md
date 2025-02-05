@@ -1,7 +1,7 @@
 ---
-name: Elisa Tentori
+name: Lamberto Ballan
 position: University of Padova
-image_path: /images/loghi_org/unipd.png
+image_path:
 twitter_username:
 blurb:
 ---

@@ -1,14 +1,6 @@
 left_links:
   - name: Home
     link: /
-  - name: Registration
-    link: /registration/
-  - name: Speakers
-    link: /speakers/
-  - name: Program
-    link: /program/
-  - name: Projects
-    link: /blog/
   - name: Logistics
     link: /venue/
   - name: Contacts
