@@ -1,9 +1,24 @@
 ---
 title: Home
 description: Collective Dynamics and Information Processing in Neural Systems
-image: /images/san_marco_night.jpg
+image: /images/background/san_marco_night.jpg
 bottom_image: http://unsplash.it/2000/1322?a=.png
 ---
+
+<style>
+.column {
+	float: left;
+	width: 33.33%;
+	padding: 2px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+</style>
 
 <section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
 	<div class="inner-hero text-container">
@@ -17,7 +32,7 @@ bottom_image: http://unsplash.it/2000/1322?a=.png
 		</div>
 	</div>
 
-	<div class="learn-more" style="font-size: 50px;">
+	<div class="learn-more" style="font-size: 40px;">
 		<a href="#learn-more">
 			<span class="highlight">Learn more</span>
 			<span class="arrow">&#x25BC;</span>
@@ -70,6 +85,11 @@ bottom_image: http://unsplash.it/2000/1322?a=.png
 					<li>Criticality in neural systems</li>
 				</ul></p>
 			</div>
+
+			<div class="image">
+				<img class="editable" src="images/others/topics.jpg" alt="AI interpretation of the conference topics" />
+			</div>
+
 		</div>
 	</section>
 </div>
