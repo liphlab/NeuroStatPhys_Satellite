@@ -5,6 +5,8 @@ left_links:
     link: /registration/
   - name: Speakers
     link: /speakers/
+  - name: Program
+    link: /program/
   - name: Logistics
     link: /venue/
   - name: Contacts
