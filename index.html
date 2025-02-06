@@ -18,6 +18,20 @@ bottom_image: http://unsplash.it/2000/1322?a=.png
 	clear: both;
 	display: table;
 }
+
+.full-width-image {
+	width: 100%;
+	display: block;
+	text-align: center;
+	margin-top: 30px; /* Aggiunge spazio sopra l'immagine */
+}
+
+.full-width-image img {
+	width: 100%;
+	height: auto; /* Mantiene le proporzioni dell'immagine */
+	display: block;
+}
+
 </style>
 
 <section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
@@ -47,6 +61,7 @@ bottom_image: http://unsplash.it/2000/1322?a=.png
 	<section class="info" id="learn-more">
 		<div class="container flex">
 			<div class="text">
+				<h1 class="editable">Aims and scopes</h1>
 				<p class="editable"  style="font-size: 20px;">
 					Neurons in the brain form highly structured networks responsible for processing information. 
 					Perception, decision-making, learning, memory, and ultimately conscious awareness are among the key functions 
@@ -75,7 +90,7 @@ bottom_image: http://unsplash.it/2000/1322?a=.png
 	<section class="info">
 		<div class="container flex">
 			<div class="text">
-				<h2 class="editable">List of topics</h2>
+				<h2 class="editable">Topics</h2>
 				<p class="editable">
 				<ul>
 					<li>Dynamics of neuronal ensembles: theory and models</li>
@@ -94,4 +109,10 @@ bottom_image: http://unsplash.it/2000/1322?a=.png
 
 		</div>
 	</section>
+
+	<div class="full-width-image">
+		<img class="editable" src="images/others/statphys29.jpg" alt=" " />
+	</div>
+	
+
 </div>
