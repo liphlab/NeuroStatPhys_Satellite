@@ -77,11 +77,13 @@ image: /images/background2/canal_grande_rialto.jpg
 			<ul class="staff">
 				{% assign sorted_organizers = site.organizers | sort: "order" %}
 				{% for person in sorted_organizers %}
-					<li>
-						<div class="square-image" style="background-image: url({% include relative-src.html src=person.image_path %})"></div>
-						<div class="name"><a href={{ person.website }} target="_blank" >{{ person.name }}</a></div>
-						<div class="position">{{ person.position }}</div>
-					</li>
+				<li>
+					<!-- Foto temporaneamente disattivate -->
+					<!-- <div class="square-image" style="background-image: url({% include relative-src.html src=person.image_path %})"></div> -->
+					<div class="name"><a href={{ person.website }} target="_blank" >{{ person.name }}</a></div>
+					<div class="position">{{ person.position }}</div>
+				</li>
+				
 				{% endfor %}
 			</ul>
 		</div>
