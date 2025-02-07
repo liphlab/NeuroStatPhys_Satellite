@@ -25,7 +25,9 @@
 		{% endif %}
 	</head>
 
-	<body>
+	<!--<body>-->
+	<body class="{% if page.url != '/' %}page-secondary{% endif %}">
+
 		<header id="mainHeader">
 			<div class="container">
 				<div class="company-name">
@@ -65,7 +67,7 @@
 					{% endfor %}
 				</ul>
 				<p class="copyright">
-					@ 2025  <a href="http://cloudcannon.com/">Template by CloudCannon</a> readapted by <a href="http://elisatentori.github.io">Elisa Tentori</a>
+					@ 2025  <a href="http://cloudcannon.com/">Template by CloudCannon</a> readapted by Elisa Tentori <!--<a href="http://elisatentori.github.io">Elisa Tentori</a>-->
 				</p>
 			</div>
 		</footer>
