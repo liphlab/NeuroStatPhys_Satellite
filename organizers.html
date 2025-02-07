@@ -21,26 +21,24 @@ image: /images/background/ponte_consafelzi.jpg
 
 
 
-
-<section class="pad" id="organizers">
-	<div class="container">
-		<p class="editor-link"><a href="cloudcannon:collections/_organizers" class="btn"><strong>&#9998;</strong> Manage Staff Members</a></p>
-		<ul class="staff">
-			{% assign sorted_organizers = site.organizers | sort: "order" %}
-			{% for person in sorted_organizers %}
-				<li>
-					<div class="square-image" style="background-image: url({% include relative-src.html src=person.image_path %})"></div>
-					<div class="name"><a href={{ person.website }} target="_blank" >{{ person.name }}</a></div>
-					<div class="position">{{ person.position }}</div>
-				</li>
-			{% endfor %}
-		</ul>
-	</div>
-
-</section>
-
-
 <div class="content">
+
+	<section class="pad" id="organizers">
+		<div class="container">
+			<p class="editor-link"><a href="cloudcannon:collections/_organizers" class="btn"><strong>&#9998;</strong> Manage Staff Members</a></p>
+			<ul class="staff">
+				{% assign sorted_organizers = site.organizers | sort: "order" %}
+				{% for person in sorted_organizers %}
+					<li>
+						<div class="square-image" style="background-image: url({% include relative-src.html src=person.image_path %})"></div>
+						<div class="name"><a href={{ person.website }} target="_blank" >{{ person.name }}</a></div>
+						<div class="position">{{ person.position }}</div>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</section>
+
 	<section class="info" id="contacts">
 		<div class="container flex">
 			<div class="text">
@@ -50,23 +48,23 @@ image: /images/background/ponte_consafelzi.jpg
 		</div>
 	</section>
 	
-	<div class="content">
-		<section class="info" id="sponsors">
-			<div class="container flex">
-				<div class="text">
-					<h2 class="editable">Sponsors</h2>
 
-					<img src="../images/loghi/logo_stars_unipd.png" alt="STARS - University of Padova"       height="100">  &nbsp; &nbsp; &nbsp; &nbsp;
-					<img src="../images/loghi/logo_dfa.png"       alt="Department of Physics and Astronomy"  height="100">  &nbsp; &nbsp; &nbsp; &nbsp;
-					<img src="../images/loghi/logo_dsb.png"       alt="Department of Biomedical Sciences"    height="100">  <br><br>
-					<img src="../images/loghi/logo_unipd.jpg"     alt="University of Padua"                  height="100">  &nbsp; &nbsp; &nbsp; &nbsp;
-					<img src="../images/loghi/Logo_ECLT.png"      alt="European Center of Living Technology" height="100">  &nbsp; &nbsp; &nbsp; &nbsp;
-					<img src="../images/loghi/logo_unive.gif"     alt="University of Venice Ca' Foscari"     height="100">  <br><br>
-					<img src="../images/loghi/logo_FOReSight.png" alt="Foresight Institute"                  height="100">  &nbsp; &nbsp; &nbsp; &nbsp;
-					<img src="../images/loghi/logo_unnamed.png"   alt="Institute de La Vision, Paris"        height="100">  <br><br>
+	<section class="info" id="sponsors">
+		<div class="container flex">
+			<div class="text">
+				<h2 class="editable">Sponsors</h2>
 
-				</div>
+				<img src="../images/loghi/logo_stars_unipd.png" alt="STARS - University of Padova"       height="100">  &nbsp; &nbsp; &nbsp; &nbsp;
+				<img src="../images/loghi/logo_dfa.png"       alt="Department of Physics and Astronomy"  height="100">  &nbsp; &nbsp; &nbsp; &nbsp;
+				<img src="../images/loghi/logo_dsb.png"       alt="Department of Biomedical Sciences"    height="100">  <br><br>
+				<img src="../images/loghi/logo_unipd.jpg"     alt="University of Padua"                  height="100">  &nbsp; &nbsp; &nbsp; &nbsp;
+				<img src="../images/loghi/Logo_ECLT.png"      alt="European Center of Living Technology" height="100">  &nbsp; &nbsp; &nbsp; &nbsp;
+				<img src="../images/loghi/logo_unive.gif"     alt="University of Venice Ca' Foscari"     height="100">  <br><br>
+				<img src="../images/loghi/logo_FOReSight.png" alt="Foresight Institute"                  height="100">  &nbsp; &nbsp; &nbsp; &nbsp;
+				<img src="../images/loghi/logo_unnamed.png"   alt="Institute de La Vision, Paris"        height="100">  <br><br>
+
 			</div>
-		</section>
+		</div>
+	</section>
 
 </div>
