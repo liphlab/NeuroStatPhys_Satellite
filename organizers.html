@@ -4,6 +4,25 @@ description: Organizers and contacts.
 image: /images/background/ponte_consafelzi.jpg
 ---
 
+<style>
+ 
+.sponsor-logos {
+	display: flex;
+	flex-wrap: wrap;  /* Permette ai loghi di andare a capo se lo schermo è piccolo */
+	justify-content: center; /* Allinea i loghi al centro */
+	align-items: center; /* Li tiene allineati verticalmente */
+	gap: 40px; /* Spazio uniforme tra i loghi */
+}
+
+.sponsor-logos img {
+	height: 100px; /* Tutti i loghi avranno la stessa altezza */
+	max-width: 200px; /* Limita la larghezza massima per evitare sproporzioni */
+	object-fit: contain; /* Mantiene le proporzioni originali */
+}
+
+</style>
+
+
 <section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
 	<div class="inner-hero text-container">
 		<div class="hero-text-container">
@@ -52,17 +71,20 @@ image: /images/background/ponte_consafelzi.jpg
 	<section class="info" id="sponsors">
 		<div class="container flex">
 			<div class="text">
+
 				<h2 class="editable">Sponsors</h2>
 
-				<img src="images/loghi/logo_stars_unipd.png" alt="STARS - University of Padova"       height="100">  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-				<img src="images/loghi/logo_dfa.png"       alt="Department of Physics and Astronomy"  height="100">  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-				<img src="images/loghi/logo_dsb.png"       alt="Department of Biomedical Sciences"    height="100">  <br><br><br>
-				<img src="images/loghi/logo_unipd.jpg"     alt="University of Padua"                  height="100">  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-				<img src="images/loghi/Logo_ECLT.png"      alt="European Center of Living Technology" height="100">  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-				<img src="images/loghi/logo_unive.gif"     alt="University of Venice Ca' Foscari"     height="100">  <br><br><br>
-				<img src="images/loghi/logo_FOReSight.png" alt="Foresight Institute"                  height="100">  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-				<img src="images/loghi/logo_unnamed.png"   alt="Institute de La Vision, Paris"        height="100">  <br><br><br>
-
+				<div class="sponsor-logos">
+					<img src="{{ site.baseurl }}/images/loghi/logo_stars_unipd.png" alt="STARS - University of Padova">
+					<img src="{{ site.baseurl }}/images/loghi/logo_dfa.png" alt="Department of Physics and Astronomy">
+					<img src="{{ site.baseurl }}/images/loghi/logo_dsb.png" alt="Department of Biomedical Sciences">
+					<img src="{{ site.baseurl }}/images/loghi/logo_unipd.jpg" alt="University of Padua">
+					<img src="{{ site.baseurl }}/images/loghi/Logo_ECLT.png" alt="European Center of Living Technology">
+					<img src="{{ site.baseurl }}/images/loghi/logo_unive.gif" alt="University of Venice Ca' Foscari">
+					<img src="{{ site.baseurl }}/images/loghi/logo_FOReSight.png" alt="Foresight Institute">
+					<img src="{{ site.baseurl }}/images/loghi/logo_unnamed.png" alt="Institute de La Vision, Paris">
+				</div>
+				
 			</div>
 		</div>
 	</section>
