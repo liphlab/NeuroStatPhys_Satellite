@@ -29,12 +29,18 @@
 	}
 
 	.hero-text-container {
-		width: 1200px;
+		max-width: 1200px;
+		width: 90%;
 		text-align: left;
 
 		h1, h2, p, .button {
 			text-shadow: 1px 1px 1px rgba(0,0,0,.8);
 		}
+
+		background: rgba(0, 0, 0, 0.5);
+		padding: 20px;
+		display: inline-block;
+		border-radius: 10px;
 	}
 
 	.hero-text-right {
