@@ -23,27 +23,54 @@ bottom_image: http://unsplash.it/2000/1322?a=.png
 	width: 100%;
 	display: block;
 	text-align: center;
-	margin-top: 30px; /* Aggiunge spazio sopra l'immagine */
+	margin-top: 30px; 
 }
 
 .full-width-image img {
 	width: 100%;
-	height: auto; /* Mantiene le proporzioni dell'immagine */
+	height: auto; 
 	display: block;
 }
 
 .sponsor-logos {
 	display: flex;
-	flex-wrap: wrap;  /* Permette ai loghi di andare a capo se lo schermo è piccolo */
-	justify-content: center; /* Allinea i loghi al centro */
-	align-items: center; /* Li tiene allineati verticalmente */
-	gap: 40px; /* Spazio uniforme tra i loghi */
+	flex-wrap: wrap;  
+	justify-content: center; 
+	align-items: center; 
+	gap: 40px; 
 }
 
 .sponsor-logos img {
-	height: 100px; /* Tutti i loghi avranno la stessa altezza */
-	max-width: 200px; /* Limita la larghezza massima per evitare sproporzioni */
-	object-fit: contain; /* Mantiene le proporzioni originali */
+	height: 100px; 
+	max-width: 200px; 
+	object-fit: contain; 
+}
+
+.learn-more {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 15px;
+    padding: 10px 0;
+}
+
+.learn-more a {
+    font-size: 20px; 
+    padding: 8px 12px; 
+}
+
+@media screen and (max-width: 768px) {
+    .learn-more {
+        flex-direction: column; 
+        text-align: center;
+        gap: 8px;
+    }
+
+    .learn-more a {
+        font-size: 18px;
+        display: block;
+        width: 100%;
+    }
 }
 
 </style>
