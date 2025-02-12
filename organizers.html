@@ -74,18 +74,30 @@ image: /images/background2/canal_grande_rialto.jpg
 	<section class="pad" id="organizers">
 		<div class="container">
 			<p class="editor-link"><a href="cloudcannon:collections/_organizers" class="btn"><strong>&#9998;</strong> Manage Staff Members</a></p>
+			
 			<ul class="staff">
+
 				{% assign sorted_organizers = site.organizers | sort: "order" %}
 				{% for person in sorted_organizers %}
+				
 				<li>
 					<!-- Foto temporaneamente disattivate -->
 					<!-- <div class="square-image" style="background-image: url({% include relative-src.html src=person.image_path %})"></div> -->
-					<div class="name"><a href={{ person.website }} target="_blank" >{{ person.name }}</a></div>
+					<div class="name">
+						{% if person.website %}
+							<a href="{{ person.website }}" target="_blank">{{ person.name }}</a>
+						{% else %}
+							{{ person.name }}
+						{% endif %}
+					</div>					
+					
 					<div class="position">{{ person.position }}</div>
+
 				</li>
 				
 				{% endfor %}
 			</ul>
+
 		</div>
 	</section>
 
@@ -99,6 +111,7 @@ image: /images/background2/canal_grande_rialto.jpg
 	</section>
 	
 
+	<!--
 	<section class="info" id="sponsors">
 		<div class="container flex">
 			<div class="text">
@@ -107,19 +120,20 @@ image: /images/background2/canal_grande_rialto.jpg
 
 				<div class="sponsor-logos">
 			
-				<img src="{{ site.baseurl }}/images/loghi/logo_stars_unipd.png" alt="STARS - University of Padova"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-				<img src="{{ site.baseurl }}/images/loghi/logo_dfa.png" alt="Department of Physics and Astronomy">  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-				<img src="{{ site.baseurl }}/images/loghi/logo_dsb.png" alt="Department of Biomedical Sciences"> <br><br><br>
-				<img src="{{ site.baseurl }}/images/loghi/logo_unipd.jpg" alt="University of Padua"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-				<img src="{{ site.baseurl }}/images/loghi/Logo_ECLT.png" alt="European Center of Living Technology"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-				<img src="{{ site.baseurl }}/images/loghi/logo_unive.png" alt="University of Venice Ca' Foscari"> <br><br><br>
-				<img src="{{ site.baseurl }}/images/loghi/logo_FOReSight.png" alt="Foresight Institute"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-				<img src="{{ site.baseurl }}/images/loghi/logo_unnamed.png" alt="Institute de La Vision, Paris"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-			
+					<img src="{{ site.baseurl }}/images/loghi/logo_stars_unipd.png" alt="STARS - University of Padova"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					<img src="{{ site.baseurl }}/images/loghi/logo_dfa.png" alt="Department of Physics and Astronomy">  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					<img src="{{ site.baseurl }}/images/loghi/logo_dsb.png" alt="Department of Biomedical Sciences"> <br><br><br>
+					<img src="{{ site.baseurl }}/images/loghi/logo_unipd.jpg" alt="University of Padua"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					<img src="{{ site.baseurl }}/images/loghi/Logo_ECLT.png" alt="European Center of Living Technology"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					<img src="{{ site.baseurl }}/images/loghi/logo_unive.png" alt="University of Venice Ca' Foscari"> <br><br><br>
+					<img src="{{ site.baseurl }}/images/loghi/logo_FOReSight.png" alt="Foresight Institute"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					<img src="{{ site.baseurl }}/images/loghi/logo_unnamed.png" alt="Institute de La Vision, Paris"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				
 				</div>
 				
 			</div>
 		</div>
 	</section>
+	-->
 
 </div>
