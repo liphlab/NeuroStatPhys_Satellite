@@ -21,6 +21,25 @@ image: /images/background2/canal_grande_rialto.jpg
     min-height: 60px;
 }
 
+.venue-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra il contenuto orizzontalmente */
+    text-align: center; /* Centra il testo */
+    gap: 20px; /* Distanza tra il testo e l'immagine */
+}
+
+.venue-section .text {
+    max-width: 700px; /* Imposta una larghezza massima per il testo */
+}
+
+.venue-section .image {
+    display: flex;
+    justify-content: center; /* Centra l'iframe */
+    width: 100%;
+}
+
+
 </style>
 
 
@@ -33,22 +52,23 @@ image: /images/background2/canal_grande_rialto.jpg
 	</div>
 </section>
 
+
 <div class="content">
 	<section class="info" id="learn-more">
-			<div class="container flex section-group">
+			<div class="container flex venue-section">
 
 				<div class="text">
 					<h2 class="editable">Venue</h2>
-					<p class="editable">The workshop will be held at </p>
+					<p class="editable">The workshop will be held at</p>
 					<h3 class="editable">ECLT: European Center of Living Technology</h3>
-					<p class="editable"><b><a href="https://www.unive.it/pag/10109/" target="_blank">Cà Bottacin</a></b> 
+					<p class="editable">
+						<b><a href="https://www.unive.it/pag/10109/" target="_blank">Cà Bottacin</a></b> 
 						<small>- Dorsoduro 3911, Calle Crosera, 30123 Venezia - 
 							<a href="https://www.google.com/maps/place/Ca'+Bottacin/@45.4355803,12.3254485,18z/data=!3m1!4b1!4m5!3m4!1s0x477eb1cf655a48d5:0xa71fdde9466a35b2!8m2!3d45.4355784!4d12.3265428"
 								target="_blank">📍 Open in Google Maps
 							</a>
 						</small>	
 					</p>
-
 				</div>
 
 				<div class="image">
@@ -97,10 +117,6 @@ image: /images/background2/canal_grande_rialto.jpg
 					water transports services and a tickets stand (<a href="https://actv.avmspa.it/en" target="_blank">ACTV official website</a> ).
 				</p>
 			</div>
-		
-			<div class="image">
-				<img class="editable" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Aerial_view_Venice_07_2017_4995.jpg/1920px-Aerial_view_Venice_07_2017_4995.jpg" alt="Aerial view of Venice" />
-			</div>
 
 		</div>
 	</section>
@@ -137,7 +153,7 @@ image: /images/background2/canal_grande_rialto.jpg
 				<h2 class="editable">Social activities</h2>
 				<p class="editable"><b>Social activities will be announced soon!</b></p>
 			</div>
-
+			
 		</div>
 	</section>
 
@@ -157,7 +173,12 @@ image: /images/background2/canal_grande_rialto.jpg
 					</ul>
 				</div>
 			</div>
-		</div>
+		
+			<div class="image">
+				<img class="editable" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Aerial_view_Venice_07_2017_4995.jpg/1920px-Aerial_view_Venice_07_2017_4995.jpg" alt="Aerial view of Venice" />
+			</div>
+
+		</div>	
 	</section>
 
 
