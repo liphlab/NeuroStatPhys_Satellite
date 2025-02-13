@@ -22,23 +22,25 @@ image: /images/background2/canal_grande_rialto.jpg
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 15px;
     padding: 10px 0;
-    width: 100%;
     text-align: center;
+    width: 100%;
 }
 
 .learn-more a {
     font-size: 22px;
-    padding: 8px 16px;
-    min-width: 120px;
-    text-align: center;
-    display: inline-block;
+    padding: 0 16px; /* Ridotto il padding verticale */
+    display: inline;
     color: #fff;
     text-decoration: none;
-	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
     transition: color 0.3s ease;
+    white-space: nowrap;
+}
+
+.learn-more a:hover {
+    color: #ffa74d;
 }
 
 @media screen and (max-width: 768px) {
@@ -46,6 +48,7 @@ image: /images/background2/canal_grande_rialto.jpg
         display: none;
     }
 }
+
 
 
 </style>
