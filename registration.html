@@ -17,7 +17,7 @@ image: /images/background2/canal_grande_rialto.jpg
 
 .learn-more {
     position: absolute;
-    bottom: 20px; /* Distanza dal bordo inferiore della foto */
+    top: calc(40vh - 60px); 
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -26,7 +26,7 @@ image: /images/background2/canal_grande_rialto.jpg
     padding: 10px 0;
     width: 100%;
     text-align: center;
-    z-index: 10; /* Garantisce visibilità sopra l'immagine */
+    z-index: 10;
 }
 
 .learn-more a {
@@ -35,14 +35,14 @@ image: /images/background2/canal_grande_rialto.jpg
     min-width: 120px;
     text-align: center;
     display: inline-block;
-    background: rgba(0, 0, 0, 0.4);
-    border-radius: 8px;
     color: #fff;
     text-decoration: none;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
+    transition: color 0.3s ease;
 }
 
 .learn-more a:hover {
-    background: rgba(0, 0, 0, 0.6);
+    color: #ffa74d;
 }
 
 @media screen and (max-width: 768px) {
@@ -50,8 +50,8 @@ image: /images/background2/canal_grande_rialto.jpg
         display: none;
     }
 }
-
 </style>
+
 
 
 <section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
