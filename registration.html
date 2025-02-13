@@ -15,6 +15,42 @@ image: /images/background2/canal_grande_rialto.jpg
     text-transform: uppercase;
 }
 
+.learn-more {
+    position: absolute;
+    bottom: 20px; /* Distanza dal bordo inferiore della foto */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    z-index: 10; /* Garantisce visibilità sopra l'immagine */
+}
+
+.learn-more a {
+    font-size: 22px;
+    padding: 8px 16px;
+    min-width: 120px;
+    text-align: center;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.learn-more a:hover {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 768px) {
+    .learn-more {
+        display: none;
+    }
+}
+
 </style>
 
 
@@ -25,6 +61,12 @@ image: /images/background2/canal_grande_rialto.jpg
 			<!--<p class="subtext editable"></p>-->
 		</div>
 	</div>
+
+	<div class="learn-more">
+		<a href="#abstracts"><span class="highlight">Abstracts </span><span class="arrow">&#x25BC;</span></a>&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="#registration"><span class="highlight">Registration </span><span class="arrow">&#x25BC;</span></a>&nbsp;&nbsp;&nbsp;&nbsp;
+	</div>
+
 </section>
 
 <div class="content">
@@ -52,7 +94,7 @@ image: /images/background2/canal_grande_rialto.jpg
 		<!--		</div>
 		</div>-->
 
-	<section class="info">
+	<section class="info" id="abstracts">
 		<div class="container flex">
 			<div class="text">
 				<h2 class="editable">Call for Abstracts</h2>
@@ -116,7 +158,7 @@ image: /images/background2/canal_grande_rialto.jpg
 		</div>
 	</section>
 
-	<section class="info">
+	<section class="info" id="registration">
 		<div class="container flex">
 			<div class="text">
 				<h2 class="editable">Registration</h2>
