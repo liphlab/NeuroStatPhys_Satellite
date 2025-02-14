@@ -94,6 +94,15 @@ bottom_image: http://unsplash.it/2000/1322?a=.png
     }
 }
 
+
+#topics::before {
+    content: "";
+    display: block;
+    height: 80px;
+    margin-top: -80px;
+    visibility: hidden;
+}
+
 </style>
 
 <section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
