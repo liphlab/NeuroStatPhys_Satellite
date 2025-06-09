@@ -18,6 +18,7 @@ image: /images/background2/salute.jpg
   <div class="container flex">
     <div class="text">
       <h2 class="editable">Provisional Program</h2>
+
       <style>
         table.program {
           width: 100%;
@@ -26,9 +27,10 @@ image: /images/background2/salute.jpg
           font-size: 0.95em;
         }
 
-        table.program th, table.program td {
+        table.program th,
+        table.program td {
           border: 1px solid #ccc;
-          padding: 8px;
+          padding: 6px 10px;
           text-align: center;
           color: black;
         }
@@ -37,48 +39,53 @@ image: /images/background2/salute.jpg
           background-color: #f2f2f2;
         }
 
+        table.program td.time {
+          background-color: #f9f9f9;
+          font-weight: bold;
+        }
+
         table.program td[colspan] {
           text-align: left;
-          font-weight: bold;
         }
       </style>
 
       <table class="program">
         <thead>
           <tr>
+            <th rowspan="2">Monday June 30</th>
             <th>Time</th>
-            <th>Monday June 30</th>
             <th>Tuesday July 1</th>
             <th>Wednesday July 2</th>
           </tr>
         </thead>
         <tbody>
-          <tr><td>9.00 - 9.45</td><td></td><td>Dietmar Plenz (Keynote)</td><td>Athena Akrami (Keynote)</td></tr>
-          <tr><td>9.45 - 10.05</td><td></td><td>Contributed talk</td><td>Contributed talk</td></tr>
-          <tr><td>10.05 - 10.25</td><td></td><td>Contributed talk</td><td>Contributed talk</td></tr>
-          <tr><td>10.25 - 10.55</td><td></td><td>Coffee break</td><td>Coffee break</td></tr>
-          <tr><td>10.55 - 11.30</td><td></td><td>Henrik Jensen</td><td>Federico Stella</td></tr>
-          <tr><td>11.30 - 11.50</td><td></td><td>Contributed talk</td><td>Contributed talk</td></tr>
-          <tr><td>11.50 - 12.25</td><td></td><td>Raffaella Burioni</td><td>Johannes Felsenberg</td></tr>
-          <tr><td>12.25 - 14.00</td><td></td><td>Lunch break</td><td>Lunch break</td></tr>
-          <tr><td>14.00 - 14.35</td><td></td><td>Gašper Tkačik</td><td>Brice Bathellier</td></tr>
-          <tr><td>14.00 - 14.55</td><td></td><td>Contributed talk</td><td>Contributed talk</td></tr>
-          <tr><td>14.55 - 15.30</td><td></td><td>Gaia Tavoni</td><td>Olivier Marre</td></tr>
-          <tr><td>15.00 - 15.15</td><td>Opening</td><td></td><td></td></tr>
-          <tr><td>15.15 - 16.00</td><td>Stefano Fusi (Keynote)</td><td></td><td></td></tr>
-          <tr><td>16.00 - 16.20</td><td>Contributed talk</td><td></td><td></td></tr>
-          <tr><td>16.20 - 16.40</td><td>Coffee break</td><td></td><td></td></tr>
-          <tr><td>16.40 - 17.15</td><td>Carlotta Martelli</td><td></td><td></td></tr>
-          <tr><td>17.15 - 17.35</td><td>Contributed talk</td><td>Coffee break</td><td>Coffee break</td></tr>
-          <tr><td>17.35 - 18.10</td><td>Luca Mazzucato</td><td>Francesca Mastrogiuseppe</td><td>Michele Allegra</td></tr>
-          <tr><td>18.10 -</td><td>Welcome reception and posters</td><td>Contributed talk</td><td>Contributed talk</td></tr>
-          <tr><td>16.55 - 17.30</td><td></td><td>Gianluigi Mongillo</td><td>Ana Paula Millán Vidal</td></tr>
-          <tr><td>17.30 - 18.05</td><td></td><td>Nima Dehghani</td><td></td></tr>
+          <tr><td class="time"></td><td class="time">9.00 - 9.45</td><td><strong>Dietmar Plenz</strong> (Keynote)</td><td><strong>Athena Akrami</strong> (Keynote)</td></tr>
+          <tr><td class="time"></td><td class="time">9.45 - 10.05</td><td>Contributed talk</td><td>Contributed talk</td></tr>
+          <tr><td class="time"></td><td class="time">10.05 - 10.25</td><td>Contributed talk</td><td>Contributed talk</td></tr>
+          <tr><td class="time"></td><td class="time">10.25 - 10.55</td><td>Coffee break</td><td>Coffee break</td></tr>
+          <tr><td class="time"></td><td class="time">10.55 - 11.30</td><td><strong>Henrik Jensen</strong></td><td><strong>Federico Stella</strong></td></tr>
+          <tr><td class="time"></td><td class="time">11.30 - 11.50</td><td>Contributed talk</td><td>Contributed talk</td></tr>
+          <tr><td class="time"></td><td class="time">11.50 - 12.25</td><td><strong>Raffaella Burioni</strong></td><td><strong>Johannes Felsenberg</strong></td></tr>
+          <tr><td class="time"></td><td class="time">12.25 - 14.00</td><td>Lunch break</td><td>Lunch break</td></tr>
+          <tr><td class="time"></td><td class="time">14.00 - 14.35</td><td><strong>Gašper Tkačik</strong></td><td><strong>Brice Bathellier</strong></td></tr>
+          <tr><td class="time"></td><td class="time">14.00 - 14.55</td><td>Contributed talk</td><td>Contributed talk</td></tr>
+          <tr><td class="time"></td><td class="time">14.55 - 15.30</td><td><strong>Gaia Tavoni</strong></td><td><strong>Olivier Marre</strong></td></tr>
+          <tr><td class="time">15.00 - 15.15</td><td class="time"></td><td colspan="2">Opening</td></tr>
+          <tr><td class="time">15.15 - 16.00</td><td class="time"></td><td colspan="2"><strong>Stefano Fusi</strong> (Keynote)</td></tr>
+          <tr><td class="time">16.00 - 16.20</td><td class="time"></td><td colspan="2">Contributed talk</td></tr>
+          <tr><td class="time">16.20 - 16.40</td><td class="time"></td><td colspan="2">Coffee break</td></tr>
+          <tr><td class="time">16.40 - 17.15</td><td class="time"></td><td colspan="2"><strong>Carlotta Martelli</strong></td></tr>
+          <tr><td class="time">17.15 - 17.35</td><td class="time"></td><td colspan="2">Contributed talk</td></tr>
+          <tr><td class="time">17.35 - 18.10</td><td class="time"></td><td><strong>Francesca Mastrogiuseppe</strong></td><td><strong>Michele Allegra</strong></td></tr>
+          <tr><td class="time">18.10 -</td><td class="time"></td><td>Contributed talk</td><td>Contributed talk</td></tr>
+          <tr><td class="time"></td><td class="time">16.55 - 17.30</td><td><strong>Gianluigi Mongillo</strong></td><td><strong>Ana Paula Millán Vidal</strong></td></tr>
+          <tr><td class="time"></td><td class="time">17.30 - 18.05</td><td><strong>Nima Dehghani</strong></td><td></td></tr>
         </tbody>
       </table>
     </div>
   </div>
 </section>
+
 
 <!--
 <div class="content">
