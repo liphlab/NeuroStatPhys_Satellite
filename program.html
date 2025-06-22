@@ -13,14 +13,99 @@ image: /images/background2/salute.jpg
 	</div>
 </section>
 
+
 <section class="info" id="learn-more">
   <div class="container flex">
     <div class="text">
       <h3 class="editable">Schedule</h3>
-      <div style="text-align: center;">
-        <img src="{{ site.baseurl }}/files/schedule2.png" alt="Workshop schedule" style="max-width: 100%; height: auto;" />
+
+      <style>
+        table.program {
+          width: 100%;
+          border-collapse: collapse;
+          margin-top: 2em;
+          font-size: 0.95em;
+        }
+
+        table.program th,
+        table.program td {
+          border: 1px solid #aaa;
+          padding: 6px 10px;
+          text-align: center;
+          color: black;
+        }
+
+        table.program th {
+          background-color: #d9d9d9;
+        }
+
+        td.time {
+          background-color: #e6e6e6;
+          font-weight: bold;
+        }
+
+        .speaker {
+          color: blue;
+          font-weight: bold;
+        }
+
+        .keynote {
+          background-color: #eaf3fb;
+        }
+
+        .break {
+          background-color: #f5f5f5;
+          font-style: italic;
+        }
+
+        .non-talk {
+          background-color: #eeeeee;
+          font-style: italic;
+          font-weight: bold;
+        }
+      </style>
+
+
+    <table class="program">
+      <thead>
+        <tr>
+          <th class="time">Time</th>
+          <th class="time">Monday June 30</th>
+          <th class="time">Time</th>
+          <th>Tuesday July 1</th>
+          <th>Wednesday July 2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Tuesday & Wednesday morning -->
+        <tr><td></td><td></td><td class="time">9.00 - 9.45</td><td class="keynote speaker">Dietmar Plenz (Keynote)</td><td class="keynote speaker">Athena Akrami (Keynote)</td></tr>
+        <tr><td></td><td></td><td class="time">9.45 - 10.05</td><td style="color: green;">Tiago Simoes</td><td style="color: green;">Predrag Živadinović</td></tr>
+        <tr><td></td><td></td><td class="time">10.05 - 10.25</td><td style="color: green;">Emily Ching</td><td style="color: green;">Tomoki Kurikawa</td></tr>
+        <tr><td></td><td></td><td class="time">10.25 - 10.55</td><td class="break">Coffee break</td><td class="break">Coffee break</td></tr>
+        <tr><td></td><td></td><td class="time">10.55 - 11.30</td><td class="speaker">Henrik Jensen</td><td class="speaker">Federico Stella</td></tr>
+        <tr><td></td><td></td><td class="time">11.30 - 11.50</td><td style="color: green;">Benedetta Mariani</td><td style="color: green;">Abhishek Banerjee</td></tr>
+        <tr><td></td><td></td><td class="time">11.50 - 12.25</td><td class="speaker">Raffaella Burioni</td><td class="speaker">Johannes Felsenberg</td></tr>
+        <tr><td></td><td></td><td class="time">12.25 - 14.00</td><td class="non-talk">Lunch break</td><td class="non-talk">Lunch break</td></tr>
+
+        <!-- Monday starts -->
+        <tr><td class="time">14.30 - 14.45</td><td class="non-talk">Registration</td><td class="time">14.00 - 14.35</td><td class="speaker">Gašper Tkačik</td><td class="speaker">Brice Bathellier</td></tr>
+        <tr><td class="time">14.45 - 15.00</td><td class="non-talk">Opening</td><td class="time">14.00 - 14.55</td><td style="color: green;">Cristina Masoller</td><td style="color: green;">Yonathan Sarmiento</td></tr>
+        <tr><td class="time">15.00 - 15.45</td><td class="keynote speaker">Stefano Fusi (Keynote)</td><td class="time">14.55 - 15.30</td><td class="speaker">Gaia Tavoni</td><td class="speaker">Olivier Marre</td></tr>
+        <tr><td class="time">15.45 - 16.05</td><td style="color: green;">Vincent Hakim</td><td class="time">15.30 - 16.00</td><td class="break">Coffee break</td><td class="break">Coffee break</td></tr>
+        <tr><td class="time">16.05 - 16.30</td><td class="break">Coffee break</td><td class="time">16.00 - 16.35</td><td class="speaker">Francesca Mastrogiuseppe</td><td class="speaker">Michele Allegra</td></tr>
+        <tr><td class="time">16.30 - 17.05</td><td class="speaker">Carlotta Martelli</td><td class="time">16.35 - 16.55</td><td style="color: green;">Giacomo Barzon</td><td style="color: green;">Richard Gast</td></tr>
+        <tr><td class="time">17.05 - 17.40</td><td class="speaker">Luca Mazzucato</td><td class="time">16.55 - 17.30</td><td class="speaker">Gianluigi Mongillo</td><td class="speaker">Ana Paula Millán Vidal</td></tr>
+        <tr><td class="time">17.40 - 18.00</td><td style="color: green;">Christian Keup</td><td class="time">17.30 - 17.40</td><td class="speaker">Nima Dehghani</td><td class="non-talk">Closing</td></tr>
+        <tr><td class="time">18.00 - 19.30</td><td class="non-talk">Welcome reception and posters</td><td></td><td></td><td></td></tr>
+        <tr><td class="time">20.00</td><td></td><td colspan="2" class="non-talk">Social Dinner</td><td></td></tr>
+      </tbody>
+    </table>
+
+
+       <p style="text-align: center; margin-top: 1em;">
+        <a href="{{ site.baseurl }}/files/Workshop_Venice_Program.pdf" target="_blank">Download PDF version</a>
+      </p>
+
       </div>
-    <p><a href="{{ site.baseurl }}/files/Workshop_Venice_Program.pdf" target="_blank">Download PDF version</a></p>
     </div>
-  </div>
-</section>
+  </section>
