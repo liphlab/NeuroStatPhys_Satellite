@@ -1,6 +1,6 @@
 - name: Home
   link: /
-- name: Abstracts and registration
+- name: Registration
   link: /registration/
 - name: Speakers
   link: /speakers/
