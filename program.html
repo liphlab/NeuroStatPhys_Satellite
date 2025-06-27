@@ -4,6 +4,46 @@ description: Program of the conference.
 image: /images/background2/salute.jpg
 ---
 
+<style>
+
+.learn-more {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+	flex-wrap: wrap;
+    gap: 15px;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.learn-more a {
+    font-size: 22px;
+    padding: 8px 16px;
+    min-width: 120px;
+    display: inline-block;
+    color: #fff;
+    /*text-decoration: none;*/
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    transition: color 0.3s ease;
+    white-space: nowrap;
+}
+
+.learn-more a:hover {
+    color: #ffa74d;
+}
+
+@media screen and (max-width: 768px) {
+    .learn-more {
+        display: none;
+    }
+}
+
+</style>
+
 <section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
 	<div class="inner-hero text-container">
 		<div class="hero-text-container">
@@ -11,11 +51,13 @@ image: /images/background2/salute.jpg
 			<!--<p class="subtext editable">Schedule of the workshop</p>-->
 		</div>
 	</div>
+
 	<div class="learn-more">
 		<a href="#schedule"><span class="highlight">Schedule </span><span class="arrow">&#x25BC;</span></a>&nbsp;&nbsp;&nbsp;&nbsp;
 		<!--<a href="#submission"><span class="highlight">Submission Guidelines </span><span class="arrow">&#x25BC;</span></a>&nbsp;&nbsp;&nbsp;&nbsp;-->
 		<a href="#booklet"><span class="highlight">Booklets of the Abstracts </span><span class="arrow">&#x25BC;</span></a>&nbsp;&nbsp;&nbsp;&nbsp;
 	</div>
+
 </section>
 
 <div class="content">
