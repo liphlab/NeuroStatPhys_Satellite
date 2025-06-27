@@ -6,6 +6,43 @@ image: /images/background2/salute.jpg
 
 <style>
 
+.learn-more {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+	flex-wrap: wrap;
+    gap: 15px;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.learn-more a {
+    font-size: 22px;
+    padding: 8px 16px;
+    min-width: 120px;
+    display: inline-block;
+    color: #fff;
+    /*text-decoration: none;*/
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    transition: color 0.3s ease;
+    white-space: nowrap;
+}
+
+.learn-more a:hover {
+    color: #ffa74d;
+}
+
+@media screen and (max-width: 768px) {
+    .learn-more {
+        display: none;
+    }
+}
+
+
 .section-group {
     display: flex;
     align-items: flex-start;
@@ -37,8 +74,6 @@ image: /images/background2/salute.jpg
     flex-shrink: 0; 
 }
 
-
-
 </style>
 
 
@@ -49,11 +84,18 @@ image: /images/background2/salute.jpg
 			<p class="subtext editable">How to get to the workshop</p>
 		</div>
 	</div>
+
+	<div class="learn-more">
+		<a href="#venue"><span class="highlight">Venue </span><span class="arrow">&#x25BC;</span></a>&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="#social"><span class="highlight">Social events </span><span class="arrow">&#x25BC;</span></a>&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="#freetime"><span class="highlight">Free time in laguna </span><span class="arrow">&#x25BC;</span></a>&nbsp;&nbsp;&nbsp;&nbsp;
+	</div>
+
 </section>
 
 
 <div class="content">
-	<section class="info" id="learn-more">
+	<section class="info" id="venue">
 			<div class="container flex venue-section">
 
 				<div class="text">
@@ -119,7 +161,7 @@ image: /images/background2/salute.jpg
 		</div>
 	</section>
 
-	<section class="info">
+	<section class="info" id="social">
 		<div class="container flex section-group">
 
 			<div class="text">
@@ -149,7 +191,7 @@ image: /images/background2/salute.jpg
 			</div>
 
 			<div class="text">
-				<h2 class="editable">Social activities</h2>
+				<h2 class="editable">Social events</h2>
 				<ul>
 				<li> <b>Welcome reception</b>
 					<br> <small> > Monday June 30 – 6 p.m.
@@ -167,7 +209,7 @@ image: /images/background2/salute.jpg
 		</div>
 	</section>
 
-	<section class="info">
+	<section class="info" id="freetime">
 		<div class="container flex">
 			<div class="text">
 				<h2 class="editable"><br><br>Free time in Venice laguna</h2>
